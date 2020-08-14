@@ -1,8 +1,12 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetCore.FluentValidationPrototype.App.Dtos;
+using NetCore.FluentValidationPrototype.App.Validators;
 
 namespace NetCore.FluentValidationPrototype.App
 {
@@ -19,7 +23,10 @@ namespace NetCore.FluentValidationPrototype.App
         {
             services.AddSingleton(configuration);
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation();
+
+            services.AddTransient<IValidator<MixedDto>, MixedDtoValidator>();
+            services.AddTransient<IValidator<WithoutAttributeDto>, WithoutAttributeDtoValidator>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

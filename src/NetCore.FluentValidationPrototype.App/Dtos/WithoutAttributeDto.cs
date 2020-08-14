@@ -2,7 +2,7 @@
 
 namespace NetCore.FluentValidationPrototype.App.Dtos
 {
-    public class WithoutAttributeDto
+    public sealed class WithoutAttributeDto
     {
         public string Foo { get; set; }
         public string Bar { get; set; }
