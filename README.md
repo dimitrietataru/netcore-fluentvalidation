@@ -2,9 +2,9 @@
 
 ### Install
 ``` powershell
-PM> Install-Package FluentValidation -Version 9.1.3
-PM> Install-Package FluentValidation.AspNetCore -Version 9.1.3
-PM> Install-Package FluentValidation.DependencyInjectionExtensions -Version 9.1.3
+PM> Install-Package FluentValidation -Version 9.2.2
+PM> Install-Package FluentValidation.AspNetCore -Version 9.2.0
+PM> Install-Package FluentValidation.DependencyInjectionExtensions -Version 9.2.0
 ```
 
 ### Configure
@@ -255,10 +255,10 @@ public class WithoutAttributeDtoValidator : AbstractValidator<WithoutAttributeDt
             "The field Fizz must be between 1 and 100."
         ],
         "EndDate": [
-            "The field EndDate must be between 01/01/2000 00:00:00 and 01/01/3000 00:00:00."
+            "End date should have a value between 2000-01-01 and 3000-01-01"
         ],
         "StartDate": [
-            "The field StartDate must be between 01/01/2000 00:00:00 and 01/01/3000 00:00:00."
+            "Start date should have a value between 2000-01-01 and 3000-01-01"
         ]
     }
 }
