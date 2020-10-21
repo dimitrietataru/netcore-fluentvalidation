@@ -1,13 +1,13 @@
 # .NET Core - FluentValidation
 
-### Install
+## Install
 ``` powershell
 PM> Install-Package FluentValidation -Version 9.2.2
 PM> Install-Package FluentValidation.AspNetCore -Version 9.2.0
 PM> Install-Package FluentValidation.DependencyInjectionExtensions -Version 9.2.0
 ```
 
-### Configure
+## Configure
 ``` csharp
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -24,7 +24,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-### Integrate
+## Integrate
 ``` csharp
 public class WithAttributeDto
 {
@@ -115,7 +115,7 @@ public class WithoutAttributeDtoValidator : AbstractValidator<WithoutAttributeDt
 }
 ```
 
-### Request/Response samples
+## Request/Response samples
 ``` json
 [POST] /api/framework-validation/test
 [POST] /api/fluent-validation/test
