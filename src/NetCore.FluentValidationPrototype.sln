@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.FluentValidationPrototype.App", "NetCore.FluentValidationPrototype.App\NetCore.FluentValidationPrototype.App.csproj", "{D18041B8-E507-4911-9B0E-E275BE413652}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.FluentValidationPrototype.App", "NetCore.FluentValidationPrototype.App\NetCore.FluentValidationPrototype.App.csproj", "{D18041B8-E507-4911-9B0E-E275BE413652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.FluentValidationPrototype.App.Test", "NetCore.FluentValidationPrototype.App.Test\NetCore.FluentValidationPrototype.App.Test.csproj", "{5B625279-7075-4024-9EFA-387934B16D3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D18041B8-E507-4911-9B0E-E275BE413652}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18041B8-E507-4911-9B0E-E275BE413652}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18041B8-E507-4911-9B0E-E275BE413652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B625279-7075-4024-9EFA-387934B16D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B625279-7075-4024-9EFA-387934B16D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B625279-7075-4024-9EFA-387934B16D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B625279-7075-4024-9EFA-387934B16D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
