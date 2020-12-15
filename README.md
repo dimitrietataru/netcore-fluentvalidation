@@ -1,10 +1,10 @@
-# .NET Core - FluentValidation
+# .NET - FluentValidation
 
 ## Install
 ``` powershell
-PM> Install-Package FluentValidation -Version 9.2.2
-PM> Install-Package FluentValidation.AspNetCore -Version 9.2.0
-PM> Install-Package FluentValidation.DependencyInjectionExtensions -Version 9.2.0
+PM> Install-Package FluentValidation -Version 9.3.0
+PM> Install-Package FluentValidation.AspNetCore -Version 9.3.0
+PM> Install-Package FluentValidation.DependencyInjectionExtensions -Version 9.3.0
 ```
 
 ## Configure
